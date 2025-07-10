@@ -12,7 +12,7 @@ namespace DATN.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=LAPTOP-UKQRGABP\\SQLEXPRESS;Database=DATN_NHOM110;User Id=sa;Password=123456;MultipleActiveResultSets=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=DATN_NHOM110;User Id=sa;Password=123456;MultipleActiveResultSets=true;TrustServerCertificate=True");
         }
 
         public DbSet<ChatLieu> ChatLieus { get; set; }
