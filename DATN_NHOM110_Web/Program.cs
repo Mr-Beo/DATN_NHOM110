@@ -1,4 +1,4 @@
-using DATN.Model;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DATN_NHOM110_Web
@@ -11,7 +11,7 @@ namespace DATN_NHOM110_Web
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<ShoeDbContext>(options =>
+            builder.Services.AddDbContext<DbContextApp>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             var app = builder.Build();
 
